@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fawaz Oyebola - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        section {
+            margin: 2rem 0;
+            padding: 2.5rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        section h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project-card {
+            background: linear-gradient(135deg, #f5f7fa, #fff);
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 16px rgba(102, 126, 234, 0.2);
+        }
+        
+        .project-card h3 {
+            color: #667eea;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
+        
+        .about-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .contact {
+            font-size: 1.05rem;
+            line-height: 2;
+            color: #555;
+        }
+        
+        .contact strong {
+            color: #667eea;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #333;
+            color: white;
+            margin-top: 3rem;
+            border-top: 3px solid #667eea;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fawaz Oyebola (Phawizy)</h1>
+        <p>Cloud & Infrastructure Engineer | AWS Specialist | DevOps Practitioner</p>
+    </header>
+    
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I'm a Cloud Infrastructure Engineer with hands-on experience in AWS and Terraform. I specialize in building scalable, automated infrastructure solutions and deploying enterprise-grade applications to the cloud.</p>
+                <p style="margin-top: 1rem;">Passionate about Infrastructure as Code, DevOps practices, and cloud architecture. Currently pursuing CCNA certification and actively learning advanced AWS services.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Recent Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>🛍️ TechShop E-Commerce</h3>
+                    <p>Production-grade e-commerce platform with Terraform, Application Load Balancer, and multi-instance EC2 deployment. Features automated health checks and traffic distribution.</p>
+                </div>
+                <div class="project-card">
+                    <h3>🚀 Web App Complete</h3>
+                    <p>Enterprise-scale web application deployment with ALB, security groups, and modular Terraform architecture. Demonstrates dev/prod environment separation.</p>
+                </div>
+                <div class="project-card">
+                    <h3>☁️ Infrastructure Automation</h3>
+                    <p>Comprehensive Infrastructure as Code implementation using Terraform. Automated deployment of load balancers, security groups, and EC2 instances.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">Terraform</span>
+                <span class="skill-tag">AWS (EC2, RDS, S3, ALB)</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Linux/Bash</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Networking</span>
+                <span class="skill-tag">CI/CD</span>
+                <span class="skill-tag">Cloud Architecture</span>
+                <span class="skill-tag">CCNA</span>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Contact & Social</h2>
+            <div class="contact">
+                <p><strong>Email:</strong> fawazoyebola@gmail.com</p>
+                <p><strong>GitHub:</strong> github.com/phawizy1</p>
+                <p><strong>Location:</strong> Abeokuta, Ogun State, Nigeria</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Fawaz Oyebola. All rights reserved. | Hosted on AWS S3</p>
+    </footer>
+</body>
+</html>
